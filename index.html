@@ -34,9 +34,38 @@
         </div>
     </div>
 </div>
+
+
 <!-- Preloader Start -->
 <header>
     <!-- Header Start -->
+
+
+    <script>
+        var countDownDate = new Date("Aug 28, 2021 12:00:00").getTime();
+        var x = setInterval(function() {
+        var now = new Date().getTime();
+        var distance = countDownDate - now;
+        var days = Math.floor(distance / (1000 * 60 * 60 * 24));
+        var hours = Math.floor((distance % (1000 * 60 * 60 * 24)) / (1000 * 60 * 60));
+        var minutes = Math.floor((distance % (1000 * 60 * 60)) / (1000 * 60));
+        var seconds = Math.floor((distance % (1000 * 60)) / 1000);
+        
+        document.getElementById("dias").innerHTML = days;
+        document.getElementById("horas").innerHTML = hours;
+        document.getElementById("minutos").innerHTML = minutes;
+        document.getElementById("segundos").innerHTML = seconds;
+            
+        if (distance < 0) {
+            clearInterval(x);
+            document.getElementById("demo").innerHTML = "Aproveita o dia!";
+          }
+        }, 1000);
+    </script>
+
+
+
+
     <div class="header-area">
             <div class="main-header header-sticky">
                 <div class="container">
@@ -118,10 +147,9 @@
             <div class="row d-flex justify-content-center">
                 <div class="col-xl-7 col-lg-8">
                     <div class="section-tittle text-center mb-70">
-                        <h2>Our Love Story​</h2>
+                        <h2>A Nossa História</h2>
                         <img src="assets/img/gallery/tittle_img.png" alt="">
-                        <p>Quisque nec facilisis sem. In at commodo velit. Aliquam tempor volutpat laoreet. Quisque non tellus eleifend arcu gravida aliquam. Vivamus quis consequat nisl, nec luctus libero. Nam sodales sem
-                            egestas sem blandit volutpat. </p>
+                        <p>Somos Muito felizes e curtimos bue um do outro e tal e coiso. </p>
                     </div>
                 </div>
             </div>
@@ -129,15 +157,15 @@
                 <div class="col-lg-5">
                     <div class="story-caption background-img mb-40" style="background-image: url(assets/img/gallery/story2.jpg);">
                         <div class="story-details">
-                            <h4>The Proposal</h4>
-                            <p>Proin at sapien ipsum. Aenean placerat, quam ac tempor congue, orci est luctus ex, ut vestibulum ipsum nisl eu nisi.</p>
-                            <p>Proin at sapien ipsum. Aenean placerat, quam ac tempor.</p>
+                            <h4>O Pedido</h4>
+                            <p>Fomos passear ao jardim de Monsanto, um dos primeiros locais onde estivemos juntos em Lisboa.</p>
+                            <p>Perto do Anfiteatro Keil do Amaral, pumbas!!</p>
                         </div>
                     </div>
                 </div>
                 <div class="col-lg-5">
                     <div class="story-img">
-                        <img  class="story2" src="assets/img/gallery/story1.jpg" alt="">
+                        <img  class="story2" src="assets/img/gallery/pedido.png" alt="">
                     </div>
                 </div>
             </div>
@@ -151,70 +179,53 @@
                 <div class="row d-flex justify-content-center">
                 <div class="col-lg-8">
                     <div class="section-tittle text-center mb-70">
-                        <h2>Wedding Info</h2>
+                        <h2>O Dia</h2>
                         <img src="assets/img/gallery/tittle_img.png" alt="">
-                        <p>Quisque nec facilisis sem. In at commodo velit. Aliquam tempor volutpat laoreet. Quisque non tellus eleifend arcu gravida aliquam. Vivamus quis consequat nisl</p>
+                        <p>Neste dia fantástico o programa será este</p>
                     </div>
                 </div>
             </div>
-            <div class="row align-items-end">
-                <div class="col-xl-4 col-lg-4 col-md-6">
-                    <div class="single-card text-center mb-30">
-                        <div class="card-top">
-                            <span class="flaticon-chart"></span>
-                            <h4>The Ceremony</h4>
-                        </div>
-                        <div class="card-bottom">
-                            <ul>
-                                <li><i class="fas fa-calendar-alt"></i>April 20, 2016</li>
-                                <li><i class="far fa-clock"></i>5:30 PM</li>
-                                <li><i class="fas fa-map-marker-alt"></i>The Mayflower Hotel</li>
-                                <li>1127 Connecticut Avenue,NY</li>
-                                <li><i class="far fa-map"></i> Check out the map</li>
-                            </ul>
-                        </div>
-                        <div class="card-buttons mt-30">
-                            <a href="#" class="btn card-btn1">Get Started</a>
-                        </div>
-                    </div>
-                </div>
-                <div class="col-xl-4 col-lg-4 col-md-6">
-                    <div class="single-card active text-center mb-30">
-                        <div class="card-top">
-                            <span class="flaticon-project"></span>
-                            <h4>The Reception</h4>
-                        </div>
-                        <div class="card-bottom">
-                            <ul>
-                                <li><i class="fas fa-calendar-alt"></i>April 20, 2016</li>
-                                <li><i class="far fa-clock"></i>5:30 PM</li>
-                                <li><i class="fas fa-map-marker-alt"></i>The Mayflower Hotel</li>
-                                <li>1127 Connecticut Avenue,NY</li>
-                                <li><i class="far fa-map"></i> Check out the map</li>
-                            </ul>
-                        </div>
-                        <div class="card-buttons mt-30">
-                            <a href="#" class="btn card-btn1">Get Started</a>
+            <div class="center">
+                <div class="row align-items-end">
+                    <div class="col-xl-4 col-lg-4 col-md-6">
+                        <div class="single-card text-center mb-30">
+                            <div class="card-top">
+                                <span class="flaticon-chart"></span>
+                                <h4>Igreja</h4>
+                            </div>
+                            <div class="card-bottom">
+                                <ul>
+                                    <li><i class="fas fa-calendar-alt"></i>28 Agosto 2021</li>
+                                    <li><i class="far fa-clock"></i>12:00</li>
+                                    <li><i class="fas fa-map-marker-alt"></i>Igreja de Santa Cruz</li>
+                                    <li>Praça 8 de Maio</li>
+                                    <li><i class="far fa-map"></i> Mapa</li>
+                                </ul>
+                            </div>
+                            <div class="card-buttons mt-30">
+                                <a href="#" class="btn card-btn1">Get Started</a>
+                            </div>
                         </div>
                     </div>
-                </div>
-                <div class="col-xl-4 col-lg-4 col-md-6">
-                    <div class="single-card text-center mb-30">
-                        <div class="card-top">
-                            <span class="flaticon-award"></span>
-                            <h4>The Party</h4>
-                        </div>
-                        <div class="card-bottom">
-                            <ul>
-                                <li><i class="fas fa-calendar-alt"></i>April 20, 2016</li>
-                                <li><i class="far fa-clock"></i>5:30 PM</li>
-                                <li><i class="fas fa-map-marker-alt"></i>The Mayflower Hotel</li>
-                                <li>1127 Connecticut Avenue,NY</li>
-                                <li><i class="far fa-map"></i> Check out the map</li>
-                            </ul>
-                        </div>
-                        <div class="card-buttons mt-30">
-                            <a href="#" class="btn card-btn1">Get Started</a>
+                    
+                    <div class="col-xl-4 col-lg-4 col-md-6">
+                        <div class="single-card text-center mb-30">
+                            <div class="card-top">
+                                <span class="flaticon-award"></span>
+                                <h4>O Evento</h4>
+                            </div>
+                            <div class="card-bottom">
+                                <ul>
+                                    <li><i class="fas fa-calendar-alt"></i>28 Agosto 2021</li>
+                                    <li><i class="far fa-clock"></i>14:30 PM</li>
+                                    <li><i class="fas fa-map-marker-alt"></i>Quinta Dona Maria</li>
+                                    <li>Algures por Soure</li>
+                                    <li><i class="far fa-map"></i> Ve o mapa</li>
+                                </ul>
+                            </div>
+                            <div class="card-buttons mt-30">
+                                <a href="#" class="btn card-btn1">Get Started</a>
+                            </div>
                         </div>
                     </div>
                 </div>
@@ -232,29 +243,29 @@
                             <div class="col-lg-3 col-md-6 col-sm-6">
                                 <!-- Counter Up -->
                                 <div class="single-counter text-center">
-                                    <span class="counter">23</span>
-                                    <p>days</p>
+                                    <span class="counter"><p id="dias"></p></span>
+                                    <p>dias</p>
                                 </div>
                             </div>
                             <div class="col-lg-2 col-md-6 col-sm-6">
                                 <!-- Counter Up -->
                                 <div class="single-counter active text-center">
-                                    <span class="counter">15</span>
-                                    <p>hours</p>
+                                    <span class="counter"><p id="horas"></p></span>
+                                    <p>horas</p>
                                 </div>
                             </div>
                             <div class="col-lg-2 col-md-6 col-sm-6">
                                 <!-- Counter Up -->
                                 <div class="single-counter text-center">
-                                    <span class="counter">46</span>
-                                    <p>mins</p>
+                                    <span class="counter"><p id="minutos"></p></span>
+                                    <p>minutos</p>
                                 </div>
                             </div>
                             <div class="col-lg-3 col-md-6 col-sm-6">
                                 <!-- Counter Up -->
                                 <div class="single-counter text-center">
-                                    <span class="counter">20</span>
-                                    <p>secs</p>
+                                    <span class="counter"><p id="segundos"></p></span>
+                                    <p>segundos</p>
                                 </div>
                             </div>
                         </div>
