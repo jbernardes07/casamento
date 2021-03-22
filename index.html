@@ -66,10 +66,16 @@
 
 <script>
     function isMobileDevice() {
-    return (typeof window.orientation !== "undefined") || (navigator.userAgent.indexOf('IEMobile') !== -1);
-};
-</script>
+    let isMobile = /Android|webOS|iPhone|iPad|Mac|Macintosh|iPod|BlackBerry|IEMobile|Opera Mini/i.test(navigator.userAgent);
 
+  if(isMobile){
+    document.getElementById("webFrame").style.display = 'none';
+  }     
+};
+document.addEventListener('DOMContentLoaded', function() {
+    isMobileDevice();
+}, false);
+</script>
 
 
 
@@ -321,49 +327,25 @@
             <div class="row">
                 <div class="col-lg-4 col-md-6">
                     <div class="single-gallery mb-30">
-                        <div class="gallery-img" style="background-image: url(assets/img/gallery/gallery1.png);">
-                        </div>
-                        <div class="thumb-content-box">
-                            <div class="thumb-content">
-                                <h3>image 01</h3>
-                                <a href="assets/img/gallery/gallery1.png" class="menorie-icon"> <i class="ti-plus"></i></a>
-                            </div>
+                        <div class="gallery-img" style="background-image: url(assets/img/gallery/gallery1.jpg);">
                         </div>
                     </div>
                 </div>
                 <div class="col-lg-8 col-md-6">
                     <div class="single-gallery mb-30">
-                        <div class="gallery-img" style="background-image: url(assets/img/gallery/gallery2.png);">
-                        </div>
-                        <div class="thumb-content-box">
-                            <div class="thumb-content">
-                                <h3>image 02</h3>
-                                <a href="assets/img/gallery/gallery1.png" class="menorie-icon"> <i class="ti-plus"></i></a>
-                            </div>
+                        <div class="gallery-img" style="background-image: url(assets/img/gallery/gallery2.jpg);">
                         </div>
                     </div>
                 </div>
                 <div class="col-lg-8 col-md-6">
                     <div class="single-gallery mb-30">
-                        <div class="gallery-img" style="background-image: url(assets/img/gallery/gallery3.png);">
-                        </div>
-                        <div class="thumb-content-box">
-                            <div class="thumb-content">
-                                <h3>image 03</h3>
-                                <a href="assets/img/gallery/gallery1.png" class="menorie-icon"> <i class="ti-plus"></i></a>
-                            </div>
+                        <div class="gallery-img" style="background-image: url(assets/img/gallery/gallery3.jpg);">
                         </div>
                     </div>
                 </div>
                 <div class="col-lg-4 col-md-6">
                     <div class="single-gallery mb-30">
-                        <div class="gallery-img" style="background-image: url(assets/img/gallery/gallery4.png);">
-                        </div>
-                        <div class="thumb-content-box">
-                            <div class="thumb-content">
-                                <h3>image 04</h3>
-                                <a href="assets/img/gallery/gallery1.png" class="menorie-icon"> <i class="ti-plus"></i></a>
-                            </div>
+                        <div class="gallery-img" style="background-image: url(assets/img/gallery/gallery4.jpg);">
                         </div>
                     </div>
                 </div>
@@ -408,7 +390,7 @@
 
                                 
                                 <div class="col-lg-12">
-                                    <iframe src="https://jbernardes07.outsystemscloud.com/GestaodeConvidados/Token" width="400" height="400" frameBorder="0"></iframe>
+                                    <iframe id="webFrame" src="https://jbernardes07.outsystemscloud.com/GestaodeConvidados/Token" width="400" height="400" frameBorder="0"></iframe>
                                      <a href="https://jbernardes07.outsystemscloud.com/GestaodeConvidados/Token" target="_blank" class="btn btn-whit">Reserva o teu lugar</a>
                                 </div>
                                 <div class="col-lg-12">
@@ -449,9 +431,12 @@
                 <div class="row d-flex justify-content-center">
                 <div class="col-lg-8">
                     <div class="section-tittle text-center mb-80">
-                        <h2>Registry Gift</h2>
+                        <h2>Contactos</h2>
                         <img src="assets/img/gallery/tittle_img.png" alt="">
-                        <p>Quisque nec facilisis sem. In at commodo velit. Aliquam tempor volutpat laoreet. Quisque non tellus eleifend arcu gravida aliquam. Vivamus quis consequat nisl</p>
+                        <p><b>João Bernardes</b> - 914108328 </p>
+                        <p>joaopvbernardes@gmail.com</p>
+                        <p><b>Filipa Santos</b> - 916869951</p> 
+                        <p>anafilipacsantos92@gmail.com</p>
                     </div>
                 </div>
             </div>
@@ -624,9 +609,9 @@
                         <div class="row d-flex align-items-center">
                             <div class="col-xl-12 ">
                                 <div class="footer-copy-right text-center">
-                                    <p><!-- Link back to Colorlib can't be removed. Template is licensed under CC BY 3.0. -->
-  Copyright &copy;<script>document.write(new Date().getFullYear());</script> All rights reserved | This template is made with <i class="fa fa-heart" aria-hidden="true"></i> by <a href="https://colorlib.com" target="_blank">Colorlib</a>
-  <!-- Link back to Colorlib can't be removed. Template is licensed under CC BY 3.0. --></p>
+                                    <p>
+                                        Filipa & João <i class="fa fa-heart" aria-hidden="true"></i> 
+                                    </p>
                                 </div>
                             </div>
                         </div>
