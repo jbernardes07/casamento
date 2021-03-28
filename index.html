@@ -70,6 +70,9 @@
 
   if(isMobile){
     document.getElementById("webFrame").style.display = 'none';
+  }
+  if(!isMobile){
+    document.getElementById("mobileFrame").style.display = 'none';
   }     
 };
 document.addEventListener('DOMContentLoaded', function() {
@@ -180,12 +183,13 @@ document.addEventListener('DOMContentLoaded', function() {
                     <div class="section-tittle text-center mb-70">
                         <h2>O Dia</h2>
                         <img src="assets/img/gallery/tittle_img.png" alt="">
-                        <p>Neste dia fantástico o programa será este</p>
+                        <p></p>
                     </div>
                 </div>
             </div>
             <div class="center">
                 <div class="row align-items-end">
+                
 
                     <!-- ___________________________________________________________________********* CARTÃO IGREJA ********* ________________ -->
 
@@ -205,7 +209,7 @@ document.addEventListener('DOMContentLoaded', function() {
                                 </ul>
                             </div>
                             <div class="card-buttons mt-30">
-                                <a href="https://www.google.com/maps/place/Igreja+de+Santa+Cruz/@40.2109852,-8.429352,166m/data=!3m1!1e3!4m5!3m4!1s0xd22f90f556a499d:0x6ac641703dfbe37d!8m2!3d40.2109418!4d-8.4287188" target="_blank" class="btn card-btn1">Visualizar</a>
+                                <a href="https://www.google.com/maps/place/Igreja+de+Santa+Cruz/@40.2109852,-8.429352,166m/data=!3m1!1e3!4m5!3m4!1s0xd22f90f556a499d:0x6ac641703dfbe37d!8m2!3d40.2109418!4d-8.4287188" target="_blank" class="btn card-btn1" style="background-color: #af9502;">Visualizar</a>
                             </div>
                         </div>
                     </div>
@@ -222,23 +226,14 @@ document.addEventListener('DOMContentLoaded', function() {
                      <div class="col-xl-4 col-lg-4 col-md-6">
                         <div class="single-card text-center mb-30">
                             <div class="card-top">
-                                <span class="flaticon-speaker"></span>
-                                <h4>Centro</h4>
+                                <img src="assets/img/logo/1.png" alt="">
+                                <h4></h4>
                             </div>
-                            <div class="card-bottom">
-                                <ul>
-                                    <li><i class="fas fa-calendar-alt"></i>28 Agosto 2021</li>
-                                    <li><i class="far fa-clock"></i>12:00</li>
-                                    <li><i class="fas fa-map-marker-alt"></i>CENTRO TESTE</li>
-                                    <li>Praça 8 de Maio</li>
-                                    <li><i class="far fa-map"></i> Mapa</li>
-                                </ul>
-                            </div>
-                            <div class="card-buttons mt-30">
-                                <a href="https://www.google.com/maps/place/Igreja+de+Santa+Cruz/@40.2109852,-8.429352,166m/data=!3m1!1e3!4m5!3m4!1s0xd22f90f556a499d:0x6ac641703dfbe37d!8m2!3d40.2109418!4d-8.4287188" target="_blank" class="btn card-btn1">Visualizar</a>
-                            </div>
+                                <img src="assets/img/logo/2.png" alt="" style="margin-bottom: 30px;">
+                                
                         </div>
                     </div>
+                    
                     
                      <!-- ___________________________________________________________________********* CARTÃO EVENTO ********* ________________ -->
 
@@ -258,13 +253,13 @@ document.addEventListener('DOMContentLoaded', function() {
                                 </ul>
                             </div>
                             <div class="card-buttons mt-30">
-                                <a href="https://www.google.com/maps/place/Quinta+Dona+Maria+Eventos/@40.077466,-8.6101792,148m/data=!3m1!1e3!4m12!1m6!3m5!1s0xd225b84642e9287:0x698d2b435f081a7!2sQuinta+Dona+Maria+Eventos!8m2!3d40.077504!4d-8.609569!3m4!1s0xd225b84642e9287:0x698d2b435f081a7!8m2!3d40.077504!4d-8.609569" target="_blank" class="btn card-btn1">Visualizar</a>
+                                <a href="https://www.google.com/maps/place/Quinta+Dona+Maria+Eventos/@40.077466,-8.6101792,148m/data=!3m1!1e3!4m12!1m6!3m5!1s0xd225b84642e9287:0x698d2b435f081a7!2sQuinta+Dona+Maria+Eventos!8m2!3d40.077504!4d-8.609569!3m4!1s0xd225b84642e9287:0x698d2b435f081a7!8m2!3d40.077504!4d-8.609569" target="_blank" class="btn card-btn1" style="background-color: #af9502;">Visualizar</a>
                             </div>
                         </div>
                     </div>
 
 
-
+                
                 </div>
             </div>
         </div>
@@ -281,28 +276,30 @@ document.addEventListener('DOMContentLoaded', function() {
                                 <!-- Counter Up -->
                                 <div class="single-counter text-center">
                                     <span class="counter"><p id="dias"></p></span>
-                                    <p>dias</p>
+                                    <p style="color: black;">dias</p>
                                 </div>
                             </div>
                             <div class="col-lg-2 col-md-6 col-sm-6">
                                 <!-- Counter Up -->
                                 <div class="single-counter active text-center">
-                                    <span class="counter"><p id="horas"></p></span>
-                                    <p>horas</p>
+                                    <span class="counter">
+                                        <p style="color: black;" id="horas"></p>
+                                    </span>
+                                    <p style="color: black;">horas</p>
                                 </div>
                             </div>
                             <div class="col-lg-2 col-md-6 col-sm-6">
                                 <!-- Counter Up -->
                                 <div class="single-counter text-center">
                                     <span class="counter"><p id="minutos"></p></span>
-                                    <p>minutos</p>
+                                    <p style="color:black;">minutos</p>
                                 </div>
                             </div>
                             <div class="col-lg-3 col-md-6 col-sm-6">
                                 <!-- Counter Up -->
                                 <div class="single-counter text-center">
                                     <span class="counter"><p id="segundos"></p></span>
-                                    <p>segundos</p>
+                                    <p style="color:black;">segundos</p>
                                 </div>
                             </div>
                         </div>
@@ -373,7 +370,7 @@ document.addEventListener('DOMContentLoaded', function() {
                                 <div class="col-lg-12">
                                     <div class="section-tittle tittle-form text-center mb-30">
                                         <h2>Contamos contigo?</h2> 
-                                        <img src="assets/img/gallery/tittle_img2.png" alt="">
+                                        <img src="assets/img/gallery/tittle_img.png" alt="">
                                     </div>
                                 </div>
                             </div>
@@ -382,7 +379,7 @@ document.addEventListener('DOMContentLoaded', function() {
                                 
                                 <div class="col-lg-12">
                                     <iframe id="webFrame" src="https://jbernardes07.outsystemscloud.com/GestaodeConvidados/Token" width="400" height="400" frameBorder="0"></iframe>
-                                     <a href="https://jbernardes07.outsystemscloud.com/GestaodeConvidados/Token" target="_blank" class="btn btn-whit">Reserva o teu lugar</a>
+                                    <a id= "mobileFrame" href="https://jbernardes07.outsystemscloud.com/GestaodeConvidados/Token" target="_blank" class="btn btn-whit">Reserva o teu lugar</a>
                                 </div>
                                 <div class="col-lg-12">
                                     
@@ -424,9 +421,9 @@ document.addEventListener('DOMContentLoaded', function() {
                     <div class="section-tittle text-center mb-80">
                         <h2>Contactos</h2>
                         <img src="assets/img/gallery/tittle_img.png" alt="">
-                        <p><b>João Bernardes</b> - 914108328 </p>
+                        <p><b style="color: black;">João Bernardes</b> - 914108328 </p>
                         <p>joaopvbernardes@gmail.com</p>
-                        <p><b>Filipa Santos</b> - 916869951</p> 
+                        <p><b style="color: black;">Filipa Santos</b> - 916869951</p> 
                         <p>anafilipacsantos92@gmail.com</p>
                     </div>
                 </div>
